@@ -1,0 +1,7 @@
+<div id="new_task">
+	<%= form_for @task, remote: true do |f| %>
+		<%= f.label :Description %>
+		<%= f.text_field :description, class: "form" %>
+		<%= f.button :"New Task" %>
+	<% end %>					
+</div>

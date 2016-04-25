@@ -1,0 +1,2 @@
+$('#new_task').remove()
+$('#edit_task_<%= @task.id %>').replaceWith("<%= j render(@task) %>").show()

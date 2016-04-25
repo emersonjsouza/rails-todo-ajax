@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Add New Task</h2>	
+	
+			<div class="row">
+				<div class="col-md-6">
+					<%= form_for @task do |f| %>
+						<%= f.label :Description %>
+						<%= f.text_field :description, class: "form" %>
+						<%= f.button :"New Task" %>
+					<% end %>					
+				</div>	
+			</div>
+		</div>
+	</div>	
+</div>
